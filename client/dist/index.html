@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Packet Viewer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        
+
+        <script src="https://cdn.socket.io/socket.io-1.0.4.js"></script>
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="scripts/vendor/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Packet Viewer</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid nmap-cont">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-http">
+                        <h5>HTTP Traffic</h5>
+                        <div class="cont-info"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="panel panel-tcp">
+                        <h5>TCP Traffic</h5>
+                        <div class="cont-info"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="panel panel-packets">
+                        <h5>Packets</h5>
+                        <div class="cont-info"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="panel panel-ips">
+                        <h5>IP</h5>
+                        <div class="cont-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/plugins.js"></script>
+
+        <script src="scripts/main.js"></script>
+
+
+</body>
+</html>
